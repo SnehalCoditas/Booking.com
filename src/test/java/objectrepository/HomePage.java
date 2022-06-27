@@ -98,7 +98,7 @@ public class HomePage {
         Thread.sleep(5000);
         javascriptClick(driver,maxRatingElement);
 
-        Thread.sleep(10000);
+        Thread.sleep(5000);
 
     }
 
@@ -122,6 +122,8 @@ public class HomePage {
         Thread.sleep(2000);
         Select atmDropdown = new Select(dropdown);
         atmDropdown.selectByValue("1");
+        Thread.sleep(5000);
+        driver.quit();
     }
 
     public void javascriptClick(WebDriver driver, WebElement element)
