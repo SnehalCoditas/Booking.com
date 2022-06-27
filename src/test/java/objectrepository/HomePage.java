@@ -123,6 +123,16 @@ public class HomePage {
         Select atmDropdown = new Select(dropdown);
         atmDropdown.selectByValue("1");
         Thread.sleep(5000);
+
+
+    }
+    public  void takeScreenshot(String path) throws IOException {
+
+        TakesScreenshot screenshot = (TakesScreenshot) driver;
+        File src = screenshot.getScreenshotAs(OutputType.FILE);
+        String filePath = System.getProperty("user.dir")+"//screenshot//"+path+".png";
+
+        FileUtils.copyFile(src,new File(filePath));
         driver.quit();
     }
 
