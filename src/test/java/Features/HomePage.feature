@@ -6,3 +6,4 @@ Feature: Book hotel through Booking.com
     And User Selects on Search
     And User applies 5 star filter
     And User selects highest rated hotel
+    And click on amount dropdrop and click

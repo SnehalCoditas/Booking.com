@@ -61,5 +61,11 @@ public class HomePage_stepDefinations {
         HomePage Home_Page= textContextSetup.pageObjectManager.getHomePage();
         Home_Page.maxRated_hotel();
     }
+    @And("^click on amount dropdrop and click$")
+    public void click_on_amount_dropdrop_and_take_screeshot() throws Throwable {
+        HomePage Home_Page= textContextSetup.pageObjectManager.getHomePage();
+        Home_Page.atm_DropDown();
+
+    }
 
 }
